@@ -1,1 +1,13 @@
+services:
+  - type: web
+    name: pattern-trader-backend
+    env: node
+    plan: free
+    region: oregon
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: FRONTEND_ORIGIN
+        value: https://vardymacum.github.io
 
